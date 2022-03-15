@@ -1,0 +1,7 @@
+<div class="parent">
+    <h3>Parent:</h3>
+    
+    <input type="text" [(ngModel)]="pv">
+    <p>{{cv}}</p>
+    <app-child [a]="pv" (e)="catch($event)"></app-child>
+</div>

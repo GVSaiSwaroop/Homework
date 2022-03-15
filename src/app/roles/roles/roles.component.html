@@ -1,0 +1,18 @@
+<p>roles works!</p>
+<div>abc</div>
+<ng-container>def</ng-container>
+<ng-template>ghi</ng-template>
+
+
+<ng-template #FE>
+        <p>View</p>
+        <p>Angular Functions</p>
+</ng-template>
+
+<ng-template #BE>
+        <p>API Builder</p>
+        <p>DB Access</p>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="false?FE:BE"></ng-container>
+

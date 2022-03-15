@@ -1,0 +1,29 @@
+<div>
+    <h3>Details:</h3>
+    <div class="row div1">
+        <div class="col-lg-3"><p>Name:{{Details.name}}</p></div>
+        <div class="col-lg-3"><p>Mobile:{{Details.mobile}}</p></div>
+        <div class="col-lg-3"><p>Email:{{Details.email}}</p></div>
+        <div class="col-lg-3"><p>Date of Birth:{{Details.dob}}</p></div>
+        </div>
+    </div>
+    <div class="row div2">
+        <div class="col-lg-6">
+            <div class="col-lg-4"><h2>Address:</h2></div>
+            <div class="col-lg-4"><p>Street:{{Details.address.addressLine}}</p></div>
+            <div class="col-lg-4"><p>City:{{Details.address.city}}</p></div>
+            <div class="col-lg-4"><p>State:{{Details.address.state}}</p></div> 
+            <div class="col-lg-4"><p>Pincode:{{Details.address.pincode}}</p></div>      
+        </div>
+        <div class="col-lg-6">
+        <div class="col-lg-4"><h2>Education:</h2></div>
+            <div *ngFor="let education of Details.education">
+                <div class="col-lg-4"><p>Qualification:{{education.qualification}}</p></div>
+                <div class="col-lg-4"><p>Year:{{education.year}}</p></div>
+                <div class="col-lg-4"><p>Percentage:{{education.percentage}}</p></div>
+            </div>
+        </div>
+</div>
+
+<p>{{Details|json}}</p>
+

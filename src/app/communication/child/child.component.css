@@ -1,0 +1,8 @@
+.child {
+    height: 50%;
+    border: 5px solid black;
+    margin: 200px 300px;
+}
+input {
+    margin-left: 50px;
+}

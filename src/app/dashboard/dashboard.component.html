@@ -1,0 +1,37 @@
+<div class="parent">
+    <div class="child-1">
+        <!-- <div class="child-1a"></div> -->
+        <h1>Sai Swaroop</h1>
+        <p>saiswaroop157@gmail.com</p>
+        <hr>
+        <ul>
+            <li routerLink="create-employee">Create Employee</li>
+            <br>
+            <li routerLink="all-employees">All Employees</li>
+            <br>
+            <li routerLink="contact-us">Contact Us</li>
+            <br>
+            <li routerLink="about-us">About Us</li>
+            <br>
+            <li routerLink="roles">Roles</li>
+            <br>
+            <li routerLink="communication">Communication</li>
+            <br>
+            <li routerLink="shopping">Shopping</li>
+            <br>
+            <li>Cart<span class="badge badge-light">(3)</span></li>
+
+
+
+
+
+
+        </ul>
+        <hr>
+        <br>
+        <button (click)="logout()">LOG OUT</button>
+    </div>
+    <div class="child-2">
+        <router-outlet></router-outlet>
+    </div>
+

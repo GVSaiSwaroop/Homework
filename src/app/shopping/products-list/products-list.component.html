@@ -1,0 +1,17 @@
+    <div class="row pl">
+        <div class="col-lg-6 div1">
+            <p>products-link works!</p>
+            <div class="row div1a" *ngFor="let product of products">
+                <div class="col-lg-3"><img src="{{product.image}}" alt="image" width="100px"></div>
+                <div class="col-lg-9">
+                    <p>{{product.title}}</p>
+                    <p>{{product.price}}</p>
+                    <button (click)="view(product)">view</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 div2">
+            <app-product-details [product]="selectedProduct" (e)="catch($event)"></app-product-details>
+        </div>
+    </div>
+ 

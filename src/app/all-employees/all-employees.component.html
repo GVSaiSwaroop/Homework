@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>MOBILE NO.</th>
+            <th>EMAIL ID</th>
+             <th>ROLE</th>
+            <th>DATE OF BIRTH</th>
+            <th>ADDRESS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.name}}</td>
+            <td>{{employee.mobile}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.role}}</td>
+            <td>{{employee.dob}}</td>
+            <td>{{employee.address}}</td>
+            <td><button (click)="delete(employee.id)">Delete</button></td>
+            <td><button (click)="view(employee.id)">View</button></td>
+        </tr>
+    </tbody>
+</table>
